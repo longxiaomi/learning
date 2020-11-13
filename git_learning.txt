@@ -19,3 +19,6 @@ git remote add origin https://github.com/longxiaomi/learning.git
 
 第七步：将本地项目推送到远程仓库：
 git push -u origin main 
+
+查看状态
+git status
