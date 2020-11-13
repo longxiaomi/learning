@@ -1,1 +1,3 @@
 # learning
+cmd指令
+进入D盘，直接执行D:
