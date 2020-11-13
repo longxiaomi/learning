@@ -1,0 +1,21 @@
+使用key，以后防止输入账号和密码：
+ssh-keygen -t rsa -C "youremail@example.com"
+
+第二步：从github上下载
+git clone "***"
+
+第三步：
+本地初始化：git init
+
+第四步：把文件添加到暂存区
+git add .：所有的修改
+git add "***"：你更改的文件夹
+
+第五步：提交到本地仓库
+git commit -m "----"
+
+第六步：将本地仓库和远程github进行关联
+git remote add origin https://github.com/longxiaomi/learning.git
+
+第七步：将本地项目推送到远程仓库：
+git push -u origin main 
