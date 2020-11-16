@@ -20,6 +20,7 @@ git remote add origin https://github.com/longxiaomi/learning.git
 第七步：将本地项目推送到远程仓库：
 git push -u origin main 
 
+<<<<<<< HEAD
 git status:查看状态
 
 2 管理分支
@@ -44,3 +45,12 @@ git使用commit命令后显示Author identity unknown的解决方法
 
 git chechout "分支名称"
 
+=======
+查看状态
+git status
+
+在github上已经更改东西了，本地更改之后push不上去：
+https://blog.csdn.net/KaiSarH/article/details/102996400
+https://blog.csdn.net/weixin_43290229/article/details/86410263
+
+>>>>>>> 7fee5476a64ef0f3561a1cb296fdffc8d4cb61a8
