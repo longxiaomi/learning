@@ -19,3 +19,28 @@ git remote add origin https://github.com/longxiaomi/learning.git
 
 第七步：将本地项目推送到远程仓库：
 git push -u origin main 
+
+git status:查看状态
+
+2 管理分支
+创建分支使用下面的命令：
+git branch "新分支名称":比如 git branch feature
+git branch 查看当前分支
+git push origin feature:将新创建的本地分支推到远程GitHub的仓库
+
+合并到master分支，先切换到master分支以后，在使用merge命名合并到master分支：
+git checkout master
+git merge feature
+git push 
+
+git使用commit命令后显示Author identity unknown的解决方法
+在git命令行中重新输入命令：
+先输入：$ git config --global user.name “你的名字”
+回车后，
+再输入：$ git config --global user.email “你的邮箱地址”
+
+
+
+
+git chechout "分支名称"
+
