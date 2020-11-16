@@ -40,3 +40,7 @@ n<Enter>:n 为数字。光标向下移动 n 行(常用)
 ?word: 向光标之上寻找一个字符串名称为 word 的字符串。
 
 
+vim 快速选中并复制粘贴替换一个单词
+https://blog.csdn.net/luo200618/article/details/52199567
+按 v 按e 是选中一个单词，按 v 按e 按y，是选中并且复制
+yw：复制当前单词
