@@ -84,6 +84,10 @@ source ~/.bashrc
 conda activate pytorch
 conda deactivate pytorch
 
+在终端执行程序时指定GPU  
+CUDA_VISIBLE_DEVICES=0 python your_file.py  # 指定GPU集群中第一块GPU使用,其他的屏蔽掉
+os.environ["CUDA_VISIBLE_DEVICES"] = "0"
+
 
 pytorch环境配置问题
 tensorflow环境配置问题
