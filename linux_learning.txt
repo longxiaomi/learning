@@ -83,14 +83,27 @@ conda create -n pytorch python=3.6
 source ~/.bashrc
 conda activate pytorch
 conda deactivate pytorch
+conda remove -n your_env_name(虚拟环境名称) --all
+conda remove --name your_env_name  package_name  # 删除环境中的某个包
 
 在终端执行程序时指定GPU  
 CUDA_VISIBLE_DEVICES=0 python your_file.py  # 指定GPU集群中第一块GPU使用,其他的屏蔽掉
 os.environ["CUDA_VISIBLE_DEVICES"] = "0"
 
+linux查看cuda版本
+cat /usr/local/cuda/version.txt
+nvcc -v
 
-pytorch环境配置问题
-tensorflow环境配置问题
+
+-----------------------------------------pytorch环境配置问题--------------------------------------------
+
+-----------------------------------------tensorflow环境配置问题-----------------------------------------
+
+tensorflow CUDA cudnn 版本对应关系:
+https://blog.csdn.net/yuejisuo1948/article/details/81043962
+
+
+
 
 
 
