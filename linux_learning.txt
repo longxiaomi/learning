@@ -55,5 +55,20 @@ chmod -R 777 文件夹名字
 
 查看磁盘占用
 df -h
+统计当前目录下文件的个数（不包括目录）:ls -l | grep "^-" | wc -l
+统计当前目录下文件的个数（包括子目录）:ls -lR| grep "^-" | wc -l
+查看某目录下文件夹(目录)的个数（包括子目录）:ls -lR | grep "^d" | wc -l
+ls -l
+
+创建虚拟环境以及激活虚拟环境
+conda create -n pytorch python=3.6
+source ~/.bashrc
+conda activate pytorch
+conda deactivate pytorch
+
+
+pytorch环境配置问题
+tensorflow环境配置问题
+
 
 
