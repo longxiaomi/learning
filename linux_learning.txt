@@ -53,8 +53,26 @@ yw：复制当前单词
 chmod 777 *.py
 chmod -R 777 文件夹名字
 
+服务器上压缩与解压
+-----zip------
+zip -r abc.zip dir
+将dir和1.txt同时压缩到abc.zip：zip -r abc.zip dir 1.txt
+unzip abc.zip
+
+-----Linux下 “.tar.gz”格式的解压与压缩------
+压缩：
+tar -zcvf tsingoal.tar.gz ./tsingoal 把当前目录的tsingoal文件压缩为 tsingoal.tar.gz文件
+解压：
+tar -zxvf tsingoal.tar.gz 把tsingoal.tar.gz文件解压到当前目录
+
+
+
+
 查看磁盘占用
 df -h
+列出当前文件夹下每个文件占用内存大小：du -ah --max-depth=1 ./
+列出当前文件夹下每个文件夹占用内存大小：du -h ./
+
 统计当前目录下文件的个数（不包括目录）:ls -l | grep "^-" | wc -l
 统计当前目录下文件的个数（包括子目录）:ls -lR| grep "^-" | wc -l
 查看某目录下文件夹(目录)的个数（包括子目录）:ls -lR | grep "^d" | wc -l
