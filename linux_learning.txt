@@ -94,6 +94,8 @@ linux查看cuda版本
 cat /usr/local/cuda/version.txt
 nvcc -v
 
+ps aux  | grep python
+
 
 -----------------------------------------pytorch环境配置问题--------------------------------------------
 
